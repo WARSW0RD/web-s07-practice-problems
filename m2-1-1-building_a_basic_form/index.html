@@ -31,30 +31,34 @@
       return (
         <form>
           <div>
-            <label>Username </label><br />
+            <label htmlFor="username">Username </label><br />
             <input
               id="username"
               type="text"
+              placeholder="Type Username"
+              maxlength={10}
             />
           </div>
 
           <div>
-            <label>Password </label><br />
+            <label htmlFor="password">Password </label><br />
             <input
               id="password"
-              type="text"
+              type="password"
+              placeholder="Type Password"
+              minlength={8}
             />
           </div>
 
           <div>
-            <label>Bio </label><br />
+            <label htmlFor="bio">Bio </label><br />
             <textarea
               id="bio"
             />
           </div>
 
           <div>
-            <input type="submit" />
+            <input type="submit" placeholder="submit" />
           </div>
         </form>
       )
